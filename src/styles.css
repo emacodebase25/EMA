@@ -1,0 +1,287 @@
+/* App.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+/* Navbar Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Navigation container */
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+/* Ensure the nav items are in a row */
+.navigation ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+/* Styling for nav links */
+.navigation a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+  padding: 10px 15px;
+}
+
+/* Active and hover effects */
+.navigation a:hover,
+.navigation a.active {
+  color: #dc1a46;
+}
+
+/* "Get a Quote" Button */
+.quote-button {
+  background-color: #dc1a46;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 20px;
+}
+
+.quote-button:hover {
+  background-color: #b51538;
+}
+
+/* Services Section */
+.services-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 42px;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.services-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-arrow {
+  background-color: white;
+  border: 2px solid #e0e0e0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #dc1a46;
+  z-index: 1;
+}
+
+.carousel-arrow.left {
+  margin-right: -20px;
+}
+
+.carousel-arrow.right {
+  margin-left: -20px;
+}
+
+.services-container {
+  display: flex;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.service-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.service-image {
+  height: 220px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+
+.seo-image {
+  background-image: url('https://via.placeholder.com/300x200?text=SEO+Image');
+}
+
+.social-image {
+  background-image: url('https://via.placeholder.com/300x200?text=Social+Media');
+}
+
+.app-image {
+  background-image: url('https://via.placeholder.com/300x200?text=App+Development');
+}
+
+.service-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  color: white;
+  text-align: left;
+}
+
+.service-overlay h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+.service-title {
+  padding: 15px;
+  text-align: left;
+  font-size: 20px;
+  color: #222;
+  background: white;
+}
+
+/* Adult SEO Section */
+.adult-seo-section {
+  background-color: #dc1a46;
+  padding: 50px 20px;
+  color: white;
+}
+
+.adult-seo-content {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.adult-seo-image {
+  flex: 1;
+  height: 300px;
+  background-image: url('https://via.placeholder.com/300x200?text=Adult+SEO');
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.adult-seo-text {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.adult-seo-text h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.adult-seo-text p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Contact Buttons */
+.contact-buttons {
+  position: fixed;
+  right: 20px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: white;
+}
+
+.skype {
+  background-color: #00aff0;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+/* URL Bar */
+.url-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 8px 15px;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #666;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  .navigation ul {
+    gap: 15px;
+    margin: 15px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .services-container {
+    flex-direction: column;
+  }
+  
+  .adult-seo-content {
+    flex-direction: column;
+  }
+  
+  .adult-seo-image {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}

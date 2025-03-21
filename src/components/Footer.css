@@ -1,0 +1,84 @@
+footer {
+  background-color: #111;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.footer-links div {
+  text-align: left;
+}
+
+.footer-links h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+/* 🔽 SEO Services Section Below Footer */
+.global-seo-services {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.global-seo-services h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.seo-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.seo-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.seo-list ul li {
+  padding: 5px 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .seo-list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .seo-list ul {
+    text-align: center;
+  }
+}
