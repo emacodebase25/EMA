@@ -6,6 +6,7 @@ import seoImage from "../images/escort-seo.jpg";
 import escortapp from "../images/escort-app.jpg";
 import escortseo from "../images/escort-seo.jpg";
 import adultseo from "../images/adult_seo.jpg";
+import adultseoj from "../images/adult-seo-jjwjwd.webp";
 
 const serviceData = [
   { img: smoImage, title: "Escort SEO Marketing" },
@@ -19,19 +20,16 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSlides = serviceData.length;
 
-  // Function to move forward
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
   };
 
-  // Function to move backward
   const prevSlide = () => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? totalSlides - 1 : prevIndex - 1
     );
   };
 
-  // Auto-slide every 3 seconds
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, 3000);
     return () => clearInterval(slideInterval);
@@ -39,7 +37,6 @@ const Home = () => {
 
   return (
     <div>
-      {/* Hero Section */}
       <section className="hero">
         <div className="overlay">
           <div className="container">
@@ -51,7 +48,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Free Audit Section */}
       <section className="audit-section">
         <h2 className="audit-title">Free Audit Now</h2>
         <form className="audit-form">
@@ -68,7 +64,6 @@ const Home = () => {
         </form>
       </section>
 
-      {/* Services Section with Smooth Infinite Loop Carousel */}
       <section className="services-section">
         <div className="container">
           <h2 className="section-title">Services We Offer</h2>
@@ -91,42 +86,165 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Us Section */}
-      <section className="about bg-gray-100 py-16 px-4">
-        <div className="container mx-auto flex flex-col md:flex-row items-center">
-          <div className="md:w-1/2 w-full h-64 bg-gray-300 flex items-center justify-center">
-            [Image Placeholder]
+      <section className="adult-seo-section">
+        <div className="container flex-container">
+          <div className="image-container">
+            <img src={adultseoj} alt="Adult SEO" />
           </div>
-          <div className="md:w-1/2 w-full md:pl-8 mt-6 md:mt-0">
-            <h2 className="text-3xl font-bold mb-4">About Us</h2>
-            <p className="text-gray-600">We are a leading marketing firm with a proven track record of success.</p>
-          </div>
-        </div>
-      </section>
+          <div className="text-container">
+            <h2>Adult SEO</h2>
+            <p>
+            Looking to dominate the competitive landscape of the adult entertainment industry? Look no further than EscortMarketing.agency's specialized Adult SEO services. Our team of seasoned experts understands the unique dynamics of the adult market and employs advanced strategies to skyrocket your online visibility, drive targeted traffic, and boost conversions.<br></br><br></br>
 
-      {/* Testimonials Section */}
-      <section className="testimonials py-16 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">What Our Clients Say</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="p-6 border rounded-lg shadow">
-              <p className="text-gray-600 italic">"Great service, highly recommend!"</p>
-              <h4 className="font-bold mt-2">- Client Name</h4>
-            </div>
-            <div className="p-6 border rounded-lg shadow">
-              <p className="text-gray-600 italic">"They really helped our business grow!"</p>
-              <h4 className="font-bold mt-2">- Client Name</h4>
+With our comprehensive Adult SEO services, we tallor strategies to suit your specific needs, whether you're an escort agency, adult performer, or adult e-commerce brand. From keyword research and on-page optimization to link building and content marketing, we cover every aspect of Adult SEO to ensure your website stands out from the crowd.<br></br><br></br>
+
+Don't settle for mediocrity when it comes to your online presence. Partner with EscortMarketing.agency and unleash the full potential of Adult SEO to propel your business to new heights of success in the ever-evolving world of adult entertainment. Contact us today to learn more and take the first step towards domination in the digital realm.
+            </p>
+            <div className="button-group">
+              <button className="black-button">Know More</button>
+              <button className="black-button">Contact Us</button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
-      <section className="contact bg-gray-100 py-16 px-4">
-        <div className="container mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-          <p className="text-gray-600 mb-4">Have questions? Get in touch with us today.</p>
-          <button className="bg-blue-500 text-white px-6 py-2 rounded">Contact Now</button>
+
+      <section className="marketing-solutions-section">
+        <div className="container text-center">
+        <h2>MARKETING SOLUTIONS FOR ESCORT BUSINESS</h2>
+          <p>
+            Supercharge your business growth by teaming up with a company that nails SEO with the good stuff—no shortcuts.
+            We're all about reeling in the right visitors, using the perfect keywords that match what your customers are itching for.
+            Short, medium, long—we cover it all, hitting the bullseye on what matters most to your audience.
+          </p>
+          <div className="solutions-grid">
+            <div className="solution-card">
+              <i className="icon-quality"></i>
+              <h3>Quality And User Friendly Content</h3>
+              <p>
+                Creating original and top-quality content for an Escort website is utmost important to leave
+                a long-lasting imprint in a sea of competitors.
+              </p>
+            </div>
+            <div className="solution-card">
+              <i className="icon-keywords"></i>
+              <h3>Optimizing Escort Business Related Keywords</h3>
+              <p>
+                In the competitive Escort websites era, optimizing content with the right blend of LSI (Latent Semantic Indexing)
+                keywords and goal keywords is significant for achieving higher rankings.
+              </p>
+            </div>
+            <div className="solution-card">
+              <i className="icon-traffic"></i>
+              <h3>Drive Relevant Traffic for Your Escort Website Through Social Media</h3>
+              <p>
+                Quality Escort websites often provide a plethora of NSFW content catering to diverse preferences,
+                ensuring a steady stream of traffic.
+              </p>
+            </div>
+            <div className="solution-card">
+              <i className="icon-backlinks"></i>
+              <h3>Building Quality Backlinks For Escort Websites</h3>
+              <p>
+                When it comes to acquiring backlinks for Escort websites, we employ strategic approaches tailored to the niche.
+              </p>
+            </div>
+            <div className="solution-card">
+              <i className="icon-spam"></i>
+              <h3>Ensuring SPAM Control</h3>
+              <p>
+                Quality Escort websites need a system in place to maintain a clean and credible reputation while minimizing spam.
+              </p>
+            </div>
+            <div className="solution-card">
+              <i className="icon-reporting"></i>
+              <h3>Monthly Reporting And Progress</h3>
+              <p>
+                Our monthly reports aim to provide you with an in-depth analysis highlighting the progress made.
+              </p>
+            </div>
+          </div>
+          <button className="cta-button">REQUEST A QUOTE</button>
+          <button className="cta-button secondary">KNOW MORE</button>
+        </div>
+      </section>
+
+      <section className="social-media-marketing">
+        <div className="container text-center">
+          <h2>SOCIAL MEDIA MARKETING FOR ESCORT AGENCIES</h2>
+          <p>
+            When operating an escort business, embracing all ways of promotion becomes essential, including using social media platforms.
+            Our <span className="highlight">escort social media marketing</span> offers a cost-effective and potent means to engage with target audiences effectively.
+          </p>
+          <div className="social-marketing-grid">
+            <div className="marketing-card">
+              <i className="icon-twitter"></i>
+              <h3>Choose the right Escort agency</h3>
+              <p>
+                In crafting a successful social media marketing strategy for an escort business, selecting the appropriate platform is paramount.
+              </p>
+            </div>
+            <div className="marketing-card">
+              <i className="icon-content"></i>
+              <h3>Create quality content for results</h3>
+              <p>
+                The pivotal axis of success or failure revolves around the narrative you spin to engage your audience.
+              </p>
+            </div>
+            <div className="marketing-card">
+              <i className="icon-trends"></i>
+              <h3>Keep an eye on trends & take advantage</h3>
+              <p>
+                Remaining ahead of the competition in the adult entertainment industry depends on following trends in social media marketing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="escort-app-development">
+        <div className="container d-flex">
+          <div className="image-section">
+            <img src={escortapp} alt="Escort App Development" />
+          </div>
+          <div className="content-section">
+            <h2>Escort and Adult Mobile App Development</h2>
+            <p>
+              We are a leading <span className="high">adult app design company</span> dedicated to crafting top software solutions.
+              Our expert development teams specialize in a multitude of technology stacks, adept at seamlessly integrating innovative designs.
+              Whether it's consumer-facing or B2B applications, we cater to various digital platforms including mobile, web, and desktop.
+            </p>
+            <p>
+              Our comprehensive <span className="high">Adult Entertainment Mobile Apps services</span> encompass technology consultation,
+              development, rigorous testing, ongoing support, and maintenance.
+            </p>
+            <button className="cta-button">KNOW MORE</button>
+            <button className="cta-button secondary">CONTACT US</button>
+          </div>
+        </div>
+      </section>
+
+      <section className="testimonials">
+        <div className="container text-center">
+          <h2>What Our Clients Say</h2>
+          <div className="testimonial-grid">
+            <div className="testimonial-card">
+              <p>"Great service, highly recommend!"</p>
+              <h4>- Client Name</h4>
+            </div>
+            <div className="testimonial-card">
+              <p>"They really helped our business grow!"</p>
+              <h4>- Client Name</h4>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact">
+        <div className="container text-center">
+          <h2>Contact Us</h2>
+          <p>Have questions? Get in touch with us today.</p>
+          <button className="blue-button">Contact Now</button>
         </div>
       </section>
     </div>

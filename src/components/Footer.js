@@ -1,11 +1,12 @@
 import React from "react";
 import "./Footer.css";
+import logo from "../images/logo_foot.png";
 
 const Footer = () => {
   return (
     <footer>
       <div className="footer-content">
-        <h2>ESCORT MARKETING</h2>
+        <img src={logo} alt="Escort Marketing" className="logo" />
         <p>SEO for adult websites to unlock the true potential of your business.</p>
         <p>Email: support@escortmarketing.agency</p>
         <p>Phone: +19295782749</p>

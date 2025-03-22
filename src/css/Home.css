@@ -172,8 +172,8 @@ textarea {
     font-size: 18px;
     font-weight: bold;
     padding: 15px;
-    background: linear-gradient(90deg, #ff6a00, #ee0979);
-    color: white;
+    background: none;
+    color: rgb(0, 0, 0);
 }
 
 /* About Us Section */
@@ -297,4 +297,297 @@ textarea {
   .arrow:hover {
     background: #ff4500;
   }
+
+
+/* Adult SEO Section */
+.adult-seo-section {
+    background-color: #DA1C4A;
+    padding: 60px 20px;
+}
+
+.adult-seo-section .flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.adult-seo-section .image-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.adult-seo-section .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.adult-seo-section .text-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.adult-seo-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.adult-seo-section p {
+    font-size: 1.1rem;
+    color: #fff;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.adult-seo-section .button-group {
+    display: flex;
+    gap: 15px;
+}
+
+.adult-seo-section .black-button {
+    background-color: black;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.adult-seo-section .black-button:hover {
+    background-color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .adult-seo-section .flex-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .adult-seo-section .button-group {
+        justify-content: center;
+    }
+}
+.marketing-solutions-section {
+    padding: 50px 0;
+    background-color: #fff;
+  }
   
+  .container {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+  }
+  
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .solution-card {
+    background: #fff5f7;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .solution-card i {
+    display: inline-block;
+    font-size: 40px;
+    color: #ff3377;
+    margin-bottom: 15px;
+  }
+  
+  .solution-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .solution-card p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .solutions-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .solutions-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  .marketing-solutions-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .marketing-solutions-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .marketing-solutions-section p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .solution-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .solution-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .solution-card p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .cta-button {
+    background: #e91e63;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  .cta-button.secondary {
+    background: white;
+    color: #e91e63;
+    border: 2px solid #e91e63;
+  }
+  
+  .social-media-marketing {
+    background: #fff;
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .social-media-marketing h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .social-media-marketing p {
+    font-size: 16px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 30px;
+  }
+  
+  .social-marketing-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .marketing-card {
+    background: #fee8ef;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  .marketing-card h3 {
+    font-size: 18px;
+    margin: 15px 0;
+  }
+  
+  .marketing-card p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  .highlight {
+    color: #e91e63;
+    font-weight: bold;
+  }
+    /* Escort App Development Section */
+.escort-app-development {
+    background: #DA1C4A;
+    color: white;
+    padding: 60px 0;
+  }
+  
+  .escort-app-development .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .image-section img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .content-section {
+    flex: 1;
+  }
+  
+  .content-section h2 {
+    font-size: 28px;
+  }
+  
+  .content-section p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .high {
+    font-weight: bold;
+    
+  }
