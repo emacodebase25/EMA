@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import "../css/Home.css";
 import smoImage from "../images/escort-smo.jpg";
@@ -20,20 +20,20 @@ const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSlides = serviceData.length;
 
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-  };
+  }, [totalSlides]);
 
-  const prevSlide = () => {
+  const prevSlide = useCallback(() => {
     setCurrentIndex((prevIndex) =>
       prevIndex === 0 ? totalSlides - 1 : prevIndex - 1
     );
-  };
+  }, [totalSlides]);
 
   useEffect(() => {
     const slideInterval = setInterval(nextSlide, 3000);
     return () => clearInterval(slideInterval);
-  }, []);
+  }, [nextSlide]);
 
   return (
     <div>
@@ -224,6 +224,12 @@ Don't settle for mediocrity when it comes to your online presence. Partner with 
         </div>
       </section>
 
+
+
+
+
+            
+
       <section className="testimonials">
         <div className="container text-center">
           <h2>What Our Clients Say</h2>
@@ -239,6 +245,56 @@ Don't settle for mediocrity when it comes to your online presence. Partner with 
           </div>
         </div>
       </section>
+
+
+
+
+
+      
+      {/* Contact & Why Choose Us Section */}
+      <div className="contact-why-section">
+                {/* Contact Form */}
+                <div className="contact-form">
+                    <h2>Tell us about your project</h2>
+                    <p>Let's discuss your project and find out what we can do to provide value.</p>
+
+                    <form>
+                        <div className="form-group">
+                            <input type="text" placeholder="Enter Your Name Here" />
+                            <input type="text" placeholder="Phone Number" />
+                        </div>
+                        <div className="form-group">
+                            <input type="email" placeholder="abc@gmail.com" />
+                            <select>
+                                <option>—Please choose an option—</option>
+                            </select>
+                        </div>
+                        <div className="form-group">
+                            <input type="text" placeholder="Your Budget" />
+                            <input type="text" placeholder="Enter URL" />
+                        </div>
+                        <select>
+                            <option>—Please choose an option—</option>
+                        </select>
+                        <div className="form-group">
+                        <textarea className="textarea" placeholder="Describe Your Requirement"></textarea>
+                        </div>
+                        <button type="submit">SEND</button>
+                        
+                    </form>
+                </div>
+
+                {/* Why Choose Us Section */}
+                <div className="why-choose-us">
+                    <h2>Why Choose Us</h2>
+                    <p>We are a renowned leading and trustworthy SEO agency worldwide that helps adult and escort businesses to grow their online traffic with proven
+                      SEO strategies for your adult and escort website.
+                      Choosing our services will be the right decision. We offer specialized expertise and targeted strategies that are essential to thrive in a highly competitive adult industry:
+                    </p>
+                    <p>Our Adult and Escort SEO experts have deep knowledge of latest SEO techniques. We understand the unique challenges and regulations that allow us to implement strategies to effectively reach the audience. When you contact our experts you can avail services of escort SEO, escort social media marketing, adult dating SEO, adult android app development services, strippers SEO, adult e-commerce SEO, brothel SEO, adult webcam SEO, adult content writing, etc. For those individuals who are seeking escort SEO services to rank high in the search engine must get in touch with our highly dedicated professionals who are just a click away from you. Our SEO services will help you surge in this intricate world of adult escort SEO so reach us anytime.</p>
+                </div>
+            </div>
+                
 
       <section className="contact">
         <div className="container text-center">

@@ -7,9 +7,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTwitter, faInstagram, faLinkedin, faSkype } from "@fortawesome/free-brands-svg-icons";
 import { faRss } from "@fortawesome/free-solid-svg-icons";
 
-
-
-// Social Icons Component
 const SocialIcons = () => {
   return (
     <div className="social-icons">
@@ -25,7 +22,8 @@ const SocialIcons = () => {
       <a href="https://skype.com" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faSkype} className="icon" />
       </a>
-      <a href="#" target="_blank" rel="noopener noreferrer">
+      
+      <a href="https://escortmarketing.agency/sitemap.rss" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faRss} className="icon" />
       </a>
     </div>
@@ -35,23 +33,18 @@ const SocialIcons = () => {
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header className={isScrolled ? "navbar scrolled" : "navbar"}>
-      {/* Top Navbar */}
       {!isScrolled && (
         <div className="top-navbar">
           <span className="phone-number">
@@ -61,21 +54,44 @@ const Navbar = () => {
             <option>English</option>
             <option>Spanish</option>
           </select>
-          <SocialIcons /> {/* Correctly calling the SocialIcons component */}
+          <SocialIcons />
         </div>
       )}
-
-      {/* Main Navbar */}
       <div className="main-navbar">
         <img src={logo} alt="Escort Marketing" className="logo" />
         <nav>
-          <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
-            ☰
-          </div>
+          <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>☰</div>
           <ul className={menuOpen ? "nav-menu active" : "nav-menu"}>
-            <li><Link to="/" className="active">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
+            <li
+              className="dropdown"
+              onMouseEnter={() => setDropdownOpen(true)}
+              onMouseLeave={() => setDropdownOpen(false)}
+            >
+              <Link to="#">Services ▾</Link>
+              {dropdownOpen && (
+                <ul className="dropdown-menu">
+                  <li><Link to="/adult-seo">Adult SEO</Link></li>
+                  <li><Link to="/adult-ecommerce-seo">Adult E-Commerce SEO</Link></li>
+                  <li><Link to="/escort-seo">Escort SEO</Link></li>
+                  <li><Link to="/escort-social-media-marketing">Escort Social Media Marketing</Link></li>
+                  <li><Link to="/adult-android-app-development">Adult Android App Development Agency</Link></li>
+                  <li><Link to="/adult-content-writing">Adult Content Writing</Link></li>
+                  <li><Link to="/strippers-seo">Strippers SEO</Link></li>
+                  <li><Link to="/adult-dating-seo">Adult Dating SEO</Link></li>
+                  <li><Link to="/adult-webcams-seo">Adult Webcams SEO</Link></li>
+                  <li><Link to="/porn-star-seo">Porn Star SEO</Link></li>
+                  <li><Link to="/tube-seo">Tube SEO</Link></li>
+                  <li><Link to="/erotic-massage-seo">Erotic Massage SEO</Link></li>
+                  <li><Link to="/brothel-seo">Brothel SEO</Link></li>
+                  <li><Link to="/adult-link-building">Adult Link Building</Link></li>
+                  <li><Link to="/adult-web-design">Adult Web Design</Link></li>
+                  <li><Link to="/independent-escort-seo">Independent Escort SEO</Link></li>
+                  <li><Link to="/escort-directory-seo">Escort Directory SEO</Link></li>
+                </ul>
+              )}
+            </li>
             <li><Link to="/faq">FAQ</Link></li>
             <li><Link to="/blog">Blog</Link></li>
             <li><Link to="/pricing">Pricing</Link></li>

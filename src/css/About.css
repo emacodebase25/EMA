@@ -1,0 +1,199 @@
+/* About Us Page Styling */
+.about-section {
+    width: 100%;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.about-banner {
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    height: 400px;
+}
+
+.about-banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.about-title {
+    font-size: 42px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.about-breadcrumb {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+/* About Content Section */
+.about-content {
+    width: 80%;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+}
+
+.about-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d91e48;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-content b {
+    color: #d91e48;
+}
+
+/* Core Values Section */
+.about-values {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.about-values li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Contact & Why Choose Us Section */
+.contact-why-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #d91e48;
+    color: white;
+    padding: 60px 5%;
+    width: 90%;
+    margin: auto;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    width: 48%;
+}
+
+.contact-form h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact-form p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group select {
+    width: 50%;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    background: black;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: white;
+    color: black;
+}
+.textarea{
+    margin: 15px;
+}
+
+/* Why Choose Us Styling */
+.why-choose-us {
+    width: 48%;
+}
+
+.why-choose-us h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: white; /* Ensuring the heading is fully visible */
+}
+
+.why-choose-us p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: white; /* Fixing dim text */
+}
+.contact-form p{
+    color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .contact-why-section {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 40px 5%;
+    }
+
+    .contact-form, .why-choose-us {
+        width: 100%;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group input,
+    .form-group select {
+        width: 100%;
+    }
+}
