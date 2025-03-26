@@ -1,0 +1,150 @@
+/* Contact Banner */
+.contact-banner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+  }
+  
+  .contact-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+  }
+  
+  .contact-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .contact-overlay h1 {
+    font-size: 42px;
+    font-weight: bold;
+  }
+  
+  .contact-overlay p {
+    font-size: 18px;
+  }
+  
+  /* Contact Section */
+  .contact-section {
+    display: flex;
+    justify-content: safe center;
+    padding: 50px 10%;
+    gap: 10px;
+  }
+  
+  /* Left Content */
+  .contact-content {
+    width: 50%;
+  }
+  
+  .contact-content h4 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .contact-content p {
+    font-size: 16px;
+    line-height: 1.4;
+    color: #333;
+  }
+  
+  /* Contact Details */
+  .contact-details {
+    margin-top: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-item img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .contact-item h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #d82c5d;
+    margin-bottom: 5px;
+  }
+  
+  /* Contact Form */
+  .contact-form-container {
+    width: 40%;
+    background: #d82c5d;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  
+  .contact-form-container h3 {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .contact-form-container p {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form-container form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form-container input,
+  .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .contact-form-container button {
+    background: #fff;
+    color: #d82c5d;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact-form-container button:hover {
+    background: #b9234a;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .contact-section {
+      flex-direction: column;
+    }
+  
+    .contact-content, .contact-form-container {
+      width: 100%;
+    }
+  
+    .contact-banner {
+      height: 250px;
+    }
+  
+    .contact-overlay h1 {
+      font-size: 28px;
+    }
+  }
+  
