@@ -11,7 +11,7 @@ body {
     background-image: url("../images/bnr_01.webp");
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,7 @@ body {
 .overlay {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Dark overlay for better readability */
+    background: rgba(0, 0, 0, 0.5); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,7 +67,7 @@ body {
 
 /* Free Audit Section */
 .audit-section {
-    background-color: #d81b4e; /* Background color matching the original */
+    background-color: #d81b4e; 
     padding: 40px 20px;
     text-align: center;
 }
@@ -679,14 +679,14 @@ textarea {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: white; /* Ensuring the heading is fully visible */
+    color: white; 
 }
 
 .why-choose-us p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: white; /* Fixing dim text */
+    color: white; 
 }
 .contact-form p{
     color: #fff;

@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/About.css"; // Make sure this file exists for styling
+import "../css/About.css"; 
 import aboutImage from "../images/escort-banner.jpg";
 
 const About = () => {

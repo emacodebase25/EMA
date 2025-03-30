@@ -182,14 +182,14 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: white; /* Ensuring the heading is fully visible */
+    color: white; 
 }
 
 .why-choose-us p {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 15px;
-    color: white; /* Fixing dim text */
+    color: white; 
 }
 .contact-form p{
     color: #fff;
@@ -235,7 +235,7 @@
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
-    border-radius: 30px; /* Makes buttons more rounded */
+    border-radius: 30px;
     cursor: pointer;
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out, text-decoration 0.3s ease-in-out;
     text-transform: uppercase;

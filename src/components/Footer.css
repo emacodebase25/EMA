@@ -8,7 +8,7 @@ footer {
 
 .footer-container {
   display: flex;
-  justify-content: center; /* Center everything */
+  justify-content: center; 
   align-items: flex-start;
   max-width: 1300px;
   flex-wrap: wrap;
@@ -18,7 +18,7 @@ footer {
 }
 
 .footer-left {
-  max-width: 250px; /* Reduce size */
+  max-width: 250px;
   margin-right: 20px;
 }
 
